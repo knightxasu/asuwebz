@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Website Front Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #f06, #ffcc00);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: rotate(-2deg);
+            animation: rotateEffect 3s infinite alternate;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #ffcc00;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        .input-box {
+            width: 300px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #ffcc00;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            margin: 15px auto;
+            outline: none;
+            transition: background 0.3s ease;
+        }
+
+        .input-box:focus {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffcc00;
+            color: black;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #f06;
+            color: white;
+        }
+
+        @keyframes rotateEffect {
+            0% {
+                transform: rotate(-2deg);
+            }
+            100% {
+                transform: rotate(2deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <font face="comic sans ms">
+        <h4>made by abhigyan</h4>
+        <h1 class="title">Welcome to Our Cool Website</h1>
+        <p class="description">Enter your information below and stay updated with rage nation!</p>
+        
+        <input type="text" class="input-box" placeholder="Enter your name">
+        <input type="email" class="input-box" placeholder="Enter your email">
+
+        <button class="submit-btn">Submit</button>
+    </div>
+
+</body>
+</html>
